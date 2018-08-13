@@ -148,7 +148,7 @@ LRESULT Char2Json(QString &buff, QJsonObject &json)
 					Current_P = j + 1;//指针移动到帧尾
 					Count += 1;//数据个数
 					QString subStr = buff.mid(i + 1, j - i - 1);
-					QStringList strlist = subStr.split(" ");
+					QStringList strlist = subStr.split(",");
 					QJsonObject SubJson;
 					i = j;
 					switch (strlist.count())
